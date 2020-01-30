@@ -1,0 +1,13 @@
+<form>
+    <br>
+    <select name="algo.difficulty" class='form-control' [(ngModel)]="algo.difficulty">
+        <option value="Easy">Easy</option>
+        <option value="Normal">Normal</option>
+        <option value="Hard">Hard</option>
+    </select>
+    <br>
+    <textarea name="algo.algorithm" class='form-control' placeholder='Type the algo here!' rows="5" [(ngModel)]="algo.algorithm"></textarea>
+    <br>
+    <button class='btn btn-success' (click)='sendAlgoToHome()'>Submit</button>
+</form>
+
